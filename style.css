@@ -56,7 +56,7 @@ body {
 start player section 
 -----------------------*/
 .player-section {
-  margin-bottom: 160px;
+  margin-bottom: 150px;
 }
 .players-container {
   display: flex;
@@ -83,7 +83,7 @@ start player section
   width: 300px;
   height: 256px;
 }
-.neymar {
+.player {
   font-size: 28px;
   font-weight: 600;
   margin: 5px 0 8px 0;
@@ -96,6 +96,11 @@ start player section
 /*------------ 
 logo style 
 --------------*/
+.footer-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 63px;
+}
 .logo img {
   width: 483.87px;
   height: 110px;
@@ -107,5 +112,14 @@ logo style
   grid-template-columns: repeat(4, 1fr);
 }
 .icon {
-  font-size: 38px;
+  font-size: 32px;
+}
+.footer-area {
+  width: 483.87px;
+  height: 213px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
 }
