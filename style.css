@@ -6,9 +6,11 @@
 /*---------------
  common style 
  ----------------*/
-body {
+body,
+body a {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  text-decoration: none;
 }
 /*-----------------------
  start header-section 
@@ -22,6 +24,11 @@ body {
   grid-column-gap: 80px;
   padding: 68px;
   margin-bottom: 70px;
+}
+.header-container:hover .live-stream {
+  background-color: #3dbafd;
+  color: #2d25a0;
+  animation: focus 3s ease-in-out infinite alternate;
 }
 .header-tittle-area {
   margin-left: 60px;
@@ -40,6 +47,9 @@ body {
   width: 164px;
   background: #e02c6d;
   padding: 15px 15px;
+  color: #ffffff;
+}
+#stream a {
   color: #ffffff;
 }
 .enrolled {
@@ -94,12 +104,21 @@ start player section
   margin: 0;
 }
 /*------------ 
-logo style 
+footer style 
 --------------*/
 .footer-section {
   display: flex;
   justify-content: center;
   margin-bottom: 63px;
+}
+.footer-area {
+  width: 483.87px;
+  height: 213px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
 }
 .logo img {
   width: 483.87px;
@@ -114,12 +133,70 @@ logo style
 .icon {
   font-size: 32px;
 }
-.footer-area {
-  width: 483.87px;
-  height: 213px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
+/* start keyframe */
+@keyframes focus {
+  0% {
+    border: 3px solid yellowgreen;
+  }
+  25% {
+    background-color: #e02c6d;
+    color: #ffffff;
+    border: 3px solid red;
+  }
+  50% {
+    background-color: #3dbafd;
+    color: #e02c6d;
+    border: 3px solid gray;
+  }
+  75% {
+    background-color: yellow;
+    color: red;
+    border: 3px solid green;
+  }
+  100% {
+    background-color: tomato;
+    color: #e02c6d;
+    border: 3px solid khaki;
+  }
+}
+/* start mobile responsive */
+@media screen and (max-width: 688px) {
+  .header-container,
+  .player-info-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+  .header-tittle {
+    width: 100%;
+  }
+  .header-tittle h1 {
+    width: 305px;
+    font-size: 39px;
+    line-height: 65px;
+  }
+  .header-tittle-area {
+    margin-left: 30px;
+  }
+  .banner img {
+    width: 392.01px;
+    height: 340px;
+    padding-top: 44.2px;
+    padding-bottom: 20px;
+  }
+  .logo img {
+    width: 337.87px;
+    height: 96px;
+  }
+  .player-section {
+    margin-bottom: 69px;
+  }
+}
+/* start tab responsibe */
+@media screen and (min-width: 688px) and (max-width: 992px) {
+  .header-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player-info-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
 }
