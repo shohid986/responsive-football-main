@@ -161,7 +161,7 @@ footer style
 }
 /* start mobile responsive */
 
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 768px) {
   .header-container,
   .player-info-container {
     grid-template-columns: repeat(1, 1fr);
