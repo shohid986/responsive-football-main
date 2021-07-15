@@ -193,7 +193,7 @@ footer style
   }
 }
 /* start tab responsibe */
-@media screen and (min-width: 688px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 1279px) {
   .header-container{
     grid-template-columns: repeat(1, 1fr);
   }
