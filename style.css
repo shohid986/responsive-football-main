@@ -160,6 +160,7 @@ footer style
   }
 }
 /* start mobile responsive */
+
 @media screen and (max-width: 688px) {
   .header-container,
   .player-info-container {
@@ -167,7 +168,7 @@ footer style
     padding: 0;
   }
   .header-tittle {
-    width: 100%;
+    width: 99%;
   }
   .header-tittle h1 {
     width: 305px;
@@ -178,7 +179,7 @@ footer style
     margin-left: 30px;
   }
   .banner img {
-    width: 98%;
+    width: 90%;
     height: auto;
     padding-top: 44.2px;
     padding-bottom: 20px;
