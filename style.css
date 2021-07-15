@@ -103,6 +103,48 @@ start player section
   font-size: 16px;
   margin: 0;
 }
+/* horizontal-row */
+.horizontal-row {
+  border: 1px solid #e4e8f0;
+}
+.horizontal-row-sizing {
+  margin-bottom: 70px;
+}
+/* start partner section */
+.partner-section {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 0 41px;
+}
+.partner-container {
+  width: 1116px;
+  height: 256px;
+}
+.partner-tittle {
+  margin-left: 30%;
+  font-weight: 600;
+  font-size: 28px;
+}
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 40px;
+}
+/* football-banner-section */
+.football-banner {
+  text-align: center;
+}
+.football-banner img {
+  width: 100%;
+  margin-bottom: 78px;
+}
+.football-banner h1 {
+  display: inline-block;
+  background-color: #e02c6d;
+  padding: 15px 15px;
+  margin-bottom: 30px;
+  animation: focus 3s ease-in-out infinite alternate;
+}
 /*------------ 
 footer style 
 --------------*/
@@ -170,13 +212,13 @@ footer style
   .header-tittle {
     width: 99%;
   }
+  .header-tittle-area {
+    margin-left: 30px;
+  }
   .header-tittle h1 {
     width: 305px;
     font-size: 39px;
     line-height: 65px;
-  }
-  .header-tittle-area {
-    margin-left: 30px;
   }
   .banner img {
     width: 90%;
@@ -184,20 +226,32 @@ footer style
     padding-top: 44.2px;
     padding-bottom: 20px;
   }
+  .player-section {
+    margin-bottom: 69px;
+  }
+  .logo-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 7%;
+  }
   .logo img {
     width: 85%;
     height: auto;
   }
-  .player-section {
-    margin-bottom: 69px;
-  }
 }
-/* start tab responsibe */
+/* start tablets responsibe */
 @media screen and (min-width: 769px) and (max-width: 1279px) {
-  .header-container{
+  .header-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .banner img {
+    margin-top: 5%;
   }
   .player-info-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
+  }
+  .logo-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 7%;
+  }
 }
