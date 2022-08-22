@@ -12,6 +12,49 @@ body a {
   margin: 0;
   text-decoration: none;
 }
+
+
+/* --------------
+navbar section
+---------------*/
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/*---------------
+ Style the links inside the navigation 
+ ----------------- */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*------------
+ Change the color of links on hover 
+ --------------*/
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*--------------
+ Add a color to the active/current link 
+ ---------------*/
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.navItem {
+  width: 30%;
+  margin: auto;
+}
+
+
 /*-----------------------
  start header-section 
  ------------------------*/
@@ -100,7 +143,7 @@ start player section
 }
 .neymar-details {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   margin: 0;
 }
 /* horizontal-row */
@@ -228,6 +271,8 @@ footer style
   }
   .player-section {
     margin-bottom: 69px;
+    width: 50%;
+    margin: 0 auto;
   }
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
@@ -238,20 +283,4 @@ footer style
     height: auto;
   }
 }
-/* start tablets responsibe */
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-  .header-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .banner img {
-    margin-top: 5%;
-  }
-  .player-info-container {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0;
-  }
-  .logo-container {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 7%;
-  }
-}
+/* start tablets 
